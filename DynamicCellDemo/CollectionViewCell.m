@@ -37,7 +37,7 @@
         _expandableView = [expandableView configureForAutoLayout];
         [self.contentView addSubview:expandableView];
         [self.expandableView addObserver:self forKeyPath:@"expanded" options:NSKeyValueObservingOptionNew context:NULL];
-        [[self.expandableView autoPinEdgesToSuperviewEdgesWith  ets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom] autoInstallConstraints];
+        [[self.expandableView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom] autoInstallConstraints];
     }
 }
 
