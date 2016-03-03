@@ -43,6 +43,7 @@
         _componentView = componentView;
         [self.contentView addSubview:componentView];
         [self.componentView addObserver:self forKeyPath:@"expanded" options:NSKeyValueObservingOptionNew context:NULL];
+        [componentView configureForAutoLayout];
         [[componentView autoPinEdgesToSuperviewEdges] autoInstallConstraints];
     }
 }
