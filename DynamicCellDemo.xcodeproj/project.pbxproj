@@ -10,10 +10,13 @@
 		3B10F7FE6DCFEFECBA52A496 /* libPods-DynamicCellDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1359B61744F87ACADB532D /* libPods-DynamicCellDemo.a */; };
 		8027B2AD1C88116000632167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8027B2AC1C88116000632167 /* main.m */; };
 		8027B2B01C88116000632167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8027B2AF1C88116000632167 /* AppDelegate.m */; };
-		8027B2B31C88116000632167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8027B2B21C88116000632167 /* ViewController.m */; };
 		8027B2B61C88116000632167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8027B2B41C88116000632167 /* Main.storyboard */; };
 		8027B2B81C88116000632167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8027B2B71C88116000632167 /* Assets.xcassets */; };
 		8027B2BB1C88116000632167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8027B2B91C88116000632167 /* LaunchScreen.storyboard */; };
+		8032B9951C88144900AC903D /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8032B9941C88144900AC903D /* CollectionViewController.m */; };
+		8032B9981C88151400AC903D /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8032B9971C88151400AC903D /* CollectionViewCell.m */; };
+		8032B99A1C8815EE00AC903D /* Component1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8032B9991C8815EE00AC903D /* Component1.xib */; };
+		8032B99D1C88166000AC903D /* Component1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8032B99C1C88166000AC903D /* Component1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +25,18 @@
 		8027B2AC1C88116000632167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8027B2AE1C88116000632167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8027B2AF1C88116000632167 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8027B2B11C88116000632167 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8027B2B21C88116000632167 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8027B2B51C88116000632167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8027B2B71C88116000632167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8027B2BA1C88116000632167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8027B2BC1C88116000632167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8032B9931C88144900AC903D /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		8032B9941C88144900AC903D /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		8032B9961C88151400AC903D /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		8032B9971C88151400AC903D /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		8032B9991C8815EE00AC903D /* Component1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Component1.xib; sourceTree = "<group>"; };
+		8032B99B1C88166000AC903D /* Component1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Component1.h; sourceTree = "<group>"; };
+		8032B99C1C88166000AC903D /* Component1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Component1.m; sourceTree = "<group>"; };
+		8032B99E1C8823A000AC903D /* ExpandableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableView.h; sourceTree = "<group>"; };
 		CF987872FBD54C4C27277EC6 /* Pods-DynamicCellDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicCellDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicCellDemo/Pods-DynamicCellDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E9203348121DF5B1EBEB1C0C /* Pods-DynamicCellDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicCellDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicCellDemo/Pods-DynamicCellDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,13 +85,19 @@
 			children = (
 				8027B2AE1C88116000632167 /* AppDelegate.h */,
 				8027B2AF1C88116000632167 /* AppDelegate.m */,
-				8027B2B11C88116000632167 /* ViewController.h */,
-				8027B2B21C88116000632167 /* ViewController.m */,
 				8027B2B41C88116000632167 /* Main.storyboard */,
 				8027B2B71C88116000632167 /* Assets.xcassets */,
 				8027B2B91C88116000632167 /* LaunchScreen.storyboard */,
 				8027B2BC1C88116000632167 /* Info.plist */,
 				8027B2AB1C88116000632167 /* Supporting Files */,
+				8032B9931C88144900AC903D /* CollectionViewController.h */,
+				8032B9941C88144900AC903D /* CollectionViewController.m */,
+				8032B9961C88151400AC903D /* CollectionViewCell.h */,
+				8032B9971C88151400AC903D /* CollectionViewCell.m */,
+				8032B9991C8815EE00AC903D /* Component1.xib */,
+				8032B99B1C88166000AC903D /* Component1.h */,
+				8032B99C1C88166000AC903D /* Component1.m */,
+				8032B99E1C8823A000AC903D /* ExpandableView.h */,
 			);
 			path = DynamicCellDemo;
 			sourceTree = "<group>";
@@ -166,6 +181,7 @@
 				8027B2BB1C88116000632167 /* LaunchScreen.storyboard in Resources */,
 				8027B2B81C88116000632167 /* Assets.xcassets in Resources */,
 				8027B2B61C88116000632167 /* Main.storyboard in Resources */,
+				8032B99A1C8815EE00AC903D /* Component1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8027B2B31C88116000632167 /* ViewController.m in Sources */,
 				8027B2B01C88116000632167 /* AppDelegate.m in Sources */,
+				8032B99D1C88166000AC903D /* Component1.m in Sources */,
 				8027B2AD1C88116000632167 /* main.m in Sources */,
+				8032B9981C88151400AC903D /* CollectionViewCell.m in Sources */,
+				8032B9951C88144900AC903D /* CollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Component1.h
 //  DynamicCellDemo
 //
 //  Created by Sanjit Saluja on 3/3/16.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ExpandableView.h"
 
-@interface ViewController : UIViewController
-
-
+@interface Component1 : UIView<ExpandableView>
+@property (nonatomic, weak) IBOutlet UIButton *toggleButton;
 @end
-
