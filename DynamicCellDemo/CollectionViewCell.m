@@ -28,12 +28,6 @@
     return self;
 }
 
-- (CGSize)intrinsicContentSize
-{
-    CGSize size = [self.contentView systemLayoutSizeFittingSize:CGSizeMake(self.bounds.size.width, CGFLOAT_MAX)];
-    return size;
-}
-
 - (void)setExpandableView:(ExpandableView *)expandableView
 {
     if (_expandableView != expandableView)
@@ -43,7 +37,7 @@
         _expandableView = [expandableView configureForAutoLayout];
         [self.contentView addSubview:expandableView];
         [self.expandableView addObserver:self forKeyPath:@"expanded" options:NSKeyValueObservingOptionNew context:NULL];
-        [[self.expandableView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom] autoInstallConstraints];
+        [[self.expandableView autoPinEdgesToSuperviewEdgesWith  ets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom] autoInstallConstraints];
     }
 }
 
