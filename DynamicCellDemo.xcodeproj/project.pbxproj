@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B10F7FE6DCFEFECBA52A496 /* libPods-DynamicCellDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1359B61744F87ACADB532D /* libPods-DynamicCellDemo.a */; };
 		8027B2AD1C88116000632167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8027B2AC1C88116000632167 /* main.m */; };
 		8027B2B01C88116000632167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8027B2AF1C88116000632167 /* AppDelegate.m */; };
 		8027B2B31C88116000632167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8027B2B21C88116000632167 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F1359B61744F87ACADB532D /* libPods-DynamicCellDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DynamicCellDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8027B2A81C88116000632167 /* DynamicCellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicCellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8027B2AC1C88116000632167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8027B2AE1C88116000632167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		8027B2B71C88116000632167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8027B2BA1C88116000632167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8027B2BC1C88116000632167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF987872FBD54C4C27277EC6 /* Pods-DynamicCellDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicCellDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicCellDemo/Pods-DynamicCellDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E9203348121DF5B1EBEB1C0C /* Pods-DynamicCellDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicCellDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicCellDemo/Pods-DynamicCellDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B10F7FE6DCFEFECBA52A496 /* libPods-DynamicCellDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04106F65F796F12D910DFAF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9203348121DF5B1EBEB1C0C /* Pods-DynamicCellDemo.debug.xcconfig */,
+				CF987872FBD54C4C27277EC6 /* Pods-DynamicCellDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8027B29F1C88116000632167 = {
 			isa = PBXGroup;
 			children = (
 				8027B2AA1C88116000632167 /* DynamicCellDemo */,
 				8027B2A91C88116000632167 /* Products */,
+				04106F65F796F12D910DFAF5 /* Pods */,
+				F73C140A1F20CA9CA9FDDC32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F73C140A1F20CA9CA9FDDC32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F1359B61744F87ACADB532D /* libPods-DynamicCellDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8027B2BF1C88116000632167 /* Build configuration list for PBXNativeTarget "DynamicCellDemo" */;
 			buildPhases = (
+				6584948663045B5BEA1BAE95 /* Check Pods Manifest.lock */,
 				8027B2A41C88116000632167 /* Sources */,
 				8027B2A51C88116000632167 /* Frameworks */,
 				8027B2A61C88116000632167 /* Resources */,
+				6537CF7BC01482AB35D1F87C /* Embed Pods Frameworks */,
+				A43FD065882C707620AC4D5D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6537CF7BC01482AB35D1F87C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicCellDemo/Pods-DynamicCellDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6584948663045B5BEA1BAE95 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A43FD065882C707620AC4D5D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicCellDemo/Pods-DynamicCellDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8027B2A41C88116000632167 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		8027B2C01C88116000632167 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9203348121DF5B1EBEB1C0C /* Pods-DynamicCellDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DynamicCellDemo/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		8027B2C11C88116000632167 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF987872FBD54C4C27277EC6 /* Pods-DynamicCellDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DynamicCellDemo/Info.plist;
@@ -300,6 +377,7 @@
 				8027B2C11C88116000632167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
