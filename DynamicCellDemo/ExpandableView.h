@@ -6,9 +6,11 @@
 //  Copyright © 2016 Sanjit Saluja. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "ExpandableViewTraits.h"
 
-
-@protocol ExpandableView <NSObject>
+@interface ExpandableView : UIView
+@property (nonatomic, strong) UIButton *toggleButton;
 @property (nonatomic, assign) BOOL expanded;
+@property (nonatomic, strong) UIView<ExpandableViewTraits> *contentView;
 @end

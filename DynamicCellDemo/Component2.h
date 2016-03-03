@@ -1,5 +1,5 @@
 //
-//  Component1.h
+//  Component2.h
 //  DynamicCellDemo
 //
 //  Created by Sanjit Saluja on 3/3/16.
@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ExpandableViewTraits.h"
 
-@interface Component1 : UIView<ExpandableViewTraits>
+@interface Component2 : UIView<ExpandableViewTraits>
+
 @end

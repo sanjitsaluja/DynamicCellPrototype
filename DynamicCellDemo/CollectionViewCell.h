@@ -10,6 +10,6 @@
 #import "ExpandableView.h"
 
 @interface CollectionViewCell : UICollectionViewCell
-@property (nonatomic, strong) UIView<ExpandableView> *componentView;
+@property (nonatomic, strong) ExpandableView *expandableView;
 @property (nonatomic, weak) UICollectionView *collectionView;
 @end

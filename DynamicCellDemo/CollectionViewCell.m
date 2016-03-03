@@ -34,17 +34,16 @@
     return size;
 }
 
-- (void)setComponentView:(UIView<ExpandableView> *)componentView
+- (void)setExpandableView:(ExpandableView *)expandableView
 {
-    if (_componentView != componentView)
+    if (_expandableView != expandableView)
     {
-        [self.componentView removeFromSuperview];
-        [self.componentView removeObserver:self forKeyPath:@"expanded"];
-        _componentView = componentView;
-        [self.contentView addSubview:componentView];
-        [self.componentView addObserver:self forKeyPath:@"expanded" options:NSKeyValueObservingOptionNew context:NULL];
-        [componentView configureForAutoLayout];
-        [[componentView autoPinEdgesToSuperviewEdges] autoInstallConstraints];
+        [self.expandableView removeFromSuperview];
+        [self.expandableView removeObserver:self forKeyPath:@"expanded"];
+        _expandableView = [expandableView configureForAutoLayout];
+        [self.contentView addSubview:expandableView];
+        [self.expandableView addObserver:self forKeyPath:@"expanded" options:NSKeyValueObservingOptionNew context:NULL];
+        [[self.expandableView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom] autoInstallConstraints];
     }
 }
 
@@ -63,8 +62,8 @@
 
 - (CGSize)desiredSizeWithWidth:(CGFloat)width
 {
-    CGSize size = [self.contentView systemLayoutSizeFittingSize:CGSizeMake(width, CGFLOAT_MAX)];
-    return size;
+    CGSize size = [self.expandableView systemLayoutSizeFittingSize:CGSizeMake(width, CGFLOAT_MAX)];
+    return CGSizeMake(width, size.height);
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
